@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Inicio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://aquimediosdecomunicacion.com/wp-content/uploads/2021/10/Captura-de-pantalla-2021-10-14-a-las-10.14.54-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+        h2 {
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo más oscuro para el .container */
+            padding: 40px 80px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .button {
+            background-color: #a5a5a5;
+            color: white;
+            padding: 15px 25px;
+            margin: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .button:hover {
+            background-color: white;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Bienvenido a Nuestra Aplicación</h2>
+        <a href="/registro" class="button">Registrarse</a>
+        <a href="/login" class="button">Iniciar Sesión</a>
+    </div>
+</body>
+</html>

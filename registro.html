@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://aquimediosdecomunicacion.com/wp-content/uploads/2021/10/Captura-de-pantalla-2021-10-14-a-las-10.14.54-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 60%;
+            max-width: 400px; /* Ajusta el ancho del contenedor */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra los elementos hijos horizontalmente */
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        input[type=text], input[type=password] {
+            width: calc(100% - 24px); /* Llena el ancho del contenedor con un poco de margen */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            color: #333;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: calc(100% - 24px); /* Alinea el ancho del botón con los campos de texto */
+            background-color: #6A0DAD;
+            color: white;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #5c0c9f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registro de Usuario</h2>
+        <form action="/registrarse" method="post">
+            <input type="text" id="username" name="username" placeholder="Nombre de usuario" required>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            <input type="submit" value="Registrarse">
+        </form>
+    </div>
+</body>
+</html>
+
+

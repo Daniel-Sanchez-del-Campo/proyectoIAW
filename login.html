@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://aquimediosdecomunicacion.com/wp-content/uploads/2021/10/Captura-de-pantalla-2021-10-14-a-las-10.14.54-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex; /* Habilita Flexbox */
+            justify-content: space-between; /* Separa los elementos hijo */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 60%; /* Ajusta esto según necesites */
+            max-width: 800px; /* Ajusta esto según necesites */
+        }
+        .form-container, .text-container {
+            flex: 1; /* Distribuye el espacio igualmente */
+        }
+        .text-container {
+            margin-right: 20px; /* Añade un poco de espacio entre los elementos */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /* Centra el texto vertical y horizontalmente */
+        }
+        input[type=text], input[type=password] {
+            width: 90%; /* Ajusta el ancho de los campos de entrada */
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #fff;
+            color: #333;
+        }
+        input[type=submit] {
+            width: 90%; /* Ajusta el ancho del botón de envío */
+            background-color: #6A0DAD;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #5c0c9f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-container">
+            <h2>Inicio de sesión</h2>
+        </div>
+        <div class="form-container">
+            <form action="/procesarlogin" method="post"> <!-- Asegúrate de cambiar la acción según tu endpoint -->
+                <input type="text" id="username" name="username" placeholder="Introduce el nombre de usuario" required>
+                <input type="password" id="password" name="password" placeholder="Introduce la contraseña" required>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

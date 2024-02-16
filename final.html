@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Administración</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #eaeaea;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            color: #6A0DAD;
+            margin: 0;
+        }
+        .navigation {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+        .navigation li {
+            margin-right: 20px;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: #6A0DAD;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Panel de Administración</h1>
+            <ul class="navigation">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Configuración</a></li>
+                <li><a href="#">Cerrar Sesión</a></li>
+            </ul>
+        </header>
+        <div class="dashboard">
+            <div class="card">
+                <h3>Usuarios</h3>
+                <p>Gestiona los usuarios del sistema.</p>
+            </div>
+            <div class="card">
+                <h3>Reportes</h3>
+                <p>Consulta y genera reportes.</p>
+            </div>
+            <div class="card">
+                <h3>Configuración</h3>
+                <p>Configura los parámetros del sistema.</p>
+            </div>
+            <div class="card">
+                <h3>Soporte</h3>
+                <p>Accede al soporte técnico.</p>
+            </div>
+        </div>
+        <div class="footer">
+            © 2024 Empresa S.A. - Todos los derechos reservados.
+        </div>
+    </div>
+</body>
+</html>
